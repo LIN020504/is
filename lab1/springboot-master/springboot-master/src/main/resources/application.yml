@@ -1,0 +1,35 @@
+server:
+  tomcat: #tomact 服务器的配置
+    relaxed-query-chars: '|,{,},[,]'  #进行get请求到时候 如何参数包含[,{,},] 认为是正常的
+  address: 0.0.0.0
+  port : 7245
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://pg:5432/studs
+    username: s336179
+    password:
+
+  jackson: # json序列号配置
+    property-naming-strategy: UPPER_CAMEL_CASE #设置大写开头的命名风格
+    date-format: yyyy-MM-dd HH:mm:ss #设置标准的时间格式
+    time-zone: Asia/Shanghai #时间对于的时区
+
+jpa:
+  database-platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+  show-sql: true
+  properties:
+    eclipselink:
+      ddl-generation: create-or-extend-tables
+      weaving: false
+  open-in-view: false
+
+
+      # minio 文件存储配置信息
+minio:
+  endpoint: http://127.0.0.1:9000
+  url: http://localhost:9000
+  accessKey: cD4GnOxBIg0NZJIoK2tM
+  secretKey: tBsUYy6G7sXLaEVyQbP9JVkndft8GrKP2J49FJij
+  bucketName: is-lab

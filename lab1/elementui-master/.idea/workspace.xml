@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e6fd571b-dca1-4a2c-8fbc-11536177b9f0" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elementui-master/src/views/Admin/PersonalPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/FileUploadRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/src/components/Tables/PaginationTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/components/Tables/PaginationTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/src/components/Upload/UploadImages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/components/Upload/UploadImages.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/src/views/Admin/Layout/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/views/Admin/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/src/views/Admin/UserPerson.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/src/views/Admin/adminList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/views/Admin/List.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/src/views/Admin/userList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/FileUploadRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/PendingAdminRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/R.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/SysConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/SysConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/controller/AppUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/controller/AppUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/controller/ApproveAdminRequestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/controller/SelectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/dto/query/AppUserPagedInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/dto/query/AppUserPagedInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/mapper/AppUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/mapper/AppUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/mapper/PendingAdminRequestMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/AppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/JWTUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="32S8VIz4w58hSPSKSY3nDxYyInS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/24374/Documents/GitHub/IS-lab/springboot-master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\24374\Documents\GitHub\IS-lab\elementui-master\elementui-master\src\views\Admin" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="serve" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/elementui-master/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e6fd571b-dca1-4a2c-8fbc-11536177b9f0" name="变更" comment="" />
+      <created>1757402635719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757402635719</updated>
+      <workItem from="1757402636614" duration="899000" />
+      <workItem from="1757594927212" duration="2555000" />
+      <workItem from="1757927320781" duration="18531000" />
+      <workItem from="1758835253702" duration="599000" />
+      <workItem from="1759137997038" duration="16925000" />
+      <workItem from="1759659560183" duration="4734000" />
+      <workItem from="1759833174131" duration="1791000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

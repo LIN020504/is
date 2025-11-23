@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cad467af-a639-411d-b204-080f2584ad1e" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/../elementui-master/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementui-master/elementui-master/src/views/Admin/PersonalPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/tools/FileUploadRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementui-master/elementui-master/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../elementui-master/elementui-master/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementui-master/elementui-master/src/components/Tables/PaginationTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../elementui-master/elementui-master/src/components/Tables/PaginationTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementui-master/elementui-master/src/components/Upload/UploadImages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../elementui-master/elementui-master/src/components/Upload/UploadImages.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementui-master/elementui-master/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../elementui-master/elementui-master/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementui-master/elementui-master/src/views/Admin/Layout/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../elementui-master/elementui-master/src/views/Admin/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementui-master/elementui-master/src/views/Admin/UserPerson.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementui-master/elementui-master/src/views/Admin/adminList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../elementui-master/elementui-master/src/views/Admin/List.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementui-master/elementui-master/src/views/Admin/userList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementui-master/elementui-master/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../elementui-master/elementui-master/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/FileUploadRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/PendingAdminRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/R.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/SysConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/SysConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/controller/AppUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/controller/AppUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/controller/ApproveAdminRequestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/controller/SelectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/dto/query/AppUserPagedInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/dto/query/AppUserPagedInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/mapper/AppUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/mapper/AppUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/mapper/PendingAdminRequestMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/service/AppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/service/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/service/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/tools/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/tools/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/tools/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/tools/JWTUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-master/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-master/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="32S8X0vkF8XMB15mUBEALUnbHSm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/24374/Documents/GitHub/IS-lab/springboot-master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facet",
+    "project.structure.proportion": "0.14941406",
+    "project.structure.side.proportion": "0.36581197",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "2567a5ec9705eb7ac2c984033e06189d",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\24374\Documents\GitHub\IS-lab\springboot-master\springboot-master\src\main\java\com\example\web\tools" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.web.WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="cad467af-a639-411d-b204-080f2584ad1e" name="变更" comment="" />
+      <created>1757402649759</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757402649759</updated>
+      <workItem from="1757402650715" duration="2849000" />
+      <workItem from="1757594832937" duration="4319000" />
+      <workItem from="1757927328731" duration="21528000" />
+      <workItem from="1758835227244" duration="649000" />
+      <workItem from="1759138006424" duration="20559000" />
+      <workItem from="1759659537443" duration="4878000" />
+      <workItem from="1759833166380" duration="9584000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
