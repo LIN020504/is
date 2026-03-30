@@ -47,10 +47,14 @@ const getDefaultState = () => {
 };
 
 const store = new Vuex.Store({
-  //  modules: {
-
-  state: getDefaultState(),
+  state: {
+    ...getDefaultState(),
+    needsRefresh: false,
+  },
   mutations: {
+    SET_NEEDS_REFRESH(state, status) {
+      state.needsRefresh = status;
+    },
     SET_TOKEN: (state, Token) => {
       state.Token = Token;
     },
@@ -72,6 +76,9 @@ const store = new Vuex.Store({
         setToken(res.Data);
       }
       return res;
+    },
+    getters: {
+      getNeedsRefresh: state => state.needsRefresh
     },
     // 根据token获取用户的信息
     async GetInfo({ commit, state }) {
@@ -100,6 +107,7 @@ const store = new Vuex.Store({
     ColumnType: (state) => state.ColumnType,
     CurrentWarehouseId: (state) => state.CurrentWarehouseId,
     UserId: (state) => state.UserInfo && state.UserInfo.Id,
+    getNeedsRefresh: state => state.needsRefresh,
   },
 });
 

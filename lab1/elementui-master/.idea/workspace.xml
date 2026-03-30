@@ -5,36 +5,112 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6fd571b-dca1-4a2c-8fbc-11536177b9f0" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elementui-master/src/views/Admin/PersonalPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/FileUploadRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elementui-master/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elementui-master/src/components/Tables/PaginationTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/components/Tables/PaginationTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elementui-master/src/components/Upload/UploadImages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/components/Upload/UploadImages.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elementui-master/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elementui-master/src/views/Admin/Layout/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/views/Admin/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elementui-master/src/views/Admin/UserPerson.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elementui-master/src/views/Admin/adminList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/views/Admin/List.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elementui-master/src/views/Admin/userList.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elementui-master/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/views/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-master/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-master/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/FileUploadRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/PendingAdminRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/R.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/elementui-master/src/ws.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_alibaba_easyexcel_3_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_alibaba_easyexcel_core_3_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_alibaba_easyexcel_support_3_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_baomidou_mybatis_plus_spring_boot3_starter_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_baomidou_mybatis_plus_spring_boot_autoconfigure_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_carrotsearch_thirdparty_simple_xml_safe_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_fasterxml_classmate_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_23_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_google_guava_guava_33_0_0_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_2_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_4_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_squareup_okio_okio_3_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_squareup_okio_okio_jvm_3_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__commons_validator_commons_validator_1_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__io_minio_minio_8_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__io_smallrye_jandex_3_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__javax_cache_cache_api_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_apache_commons_commons_csv_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk18on_1_78.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_eclipse_angus_angus_activation_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_ehcache_ehcache_3_10_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_4_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_4_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_glassfish_jaxb_txw2_4_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_5_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_hibernate_orm_hibernate_jcache_6_5_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_5_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_jcommander_jcommander_1_83.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_9_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_9_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_9_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_9_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_mybatis_mybatis_3_5_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_mybatis_mybatis_spring_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_springframework_security_spring_security_config_6_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_springframework_security_spring_security_core_6_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_springframework_security_spring_security_web_6_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_springframework_spring_messaging_6_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_springframework_spring_websocket_6_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_testng_testng_7_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_webjars_jquery_3_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_10_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/entity/ImportHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/entity/ImportTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/repository/ImportHistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/repository/ImportTransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/ImportTransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/NotifyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/CacheStatSwitch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/JpaCacheStatisticsAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/SecurityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/UpdateNotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/UpdateResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/WebSocketHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/src/components/Buttons/ExportButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/components/Buttons/ExportButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementui-master/src/views/Admin/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elementui-master/src/views/Admin/List.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/SysConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/SysConst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/controller/AppUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/controller/AppUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/controller/ApproveAdminRequestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/controller/SelectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/controller/MinIOController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/controller/MinIOController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/dto/AppUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/dto/AppUserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/dto/query/AppUserPagedInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/dto/query/AppUserPagedInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/mapper/AppUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/mapper/AppUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/mapper/PendingAdminRequestMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/entity/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/entity/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/repository/AppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/repository/AppUserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/AppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/MinIOService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/MinIOService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/service/impl/AppUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/JWTUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/Extension.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/Extension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/GlobalResponseAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/GlobalResponseAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/MinioConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/MinioConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/java/com/example/web/tools/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/static/css/chunk-vendors.c484e7d8.css" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/static/css/chunk-vendors.34a2f782.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/static/js/220.ea354c6a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/static/js/220.ea354c6a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/static/js/app.bc738e1e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/static/js/app.bc738e1e.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/static/js/chunk-vendors.15b7eb06.js" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/static/js/chunk-vendors.d6eb8dbd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/static/js/chunk-vendors.15b7eb06.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/src/main/resources/static/js/chunk-vendors.d6eb8dbd.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-master/springboot-master/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-master/springboot-master/web.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +173,12 @@
       <workItem from="1759137997038" duration="16925000" />
       <workItem from="1759659560183" duration="4734000" />
       <workItem from="1759833174131" duration="1791000" />
+      <workItem from="1766916973559" duration="5000" />
+      <workItem from="1766918564597" duration="1905000" />
+      <workItem from="1767774933144" duration="1871000" />
+      <workItem from="1768215512653" duration="599000" />
+      <workItem from="1768649943580" duration="595000" />
+      <workItem from="1768905827371" duration="2455000" />
     </task>
     <servers />
   </component>

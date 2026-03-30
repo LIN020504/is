@@ -1,6 +1,11 @@
 package com.example.web.controller;
 
 import com.example.web.dto.AppUserDto;
+import com.example.web.entity.ImportHistory;
+import com.example.web.repository.ImportHistoryRepository;
+import com.example.web.service.MinIOService;
+import com.example.web.tools.UpdateNotificationService;
+import com.example.web.tools.UpdateResponse;
 import com.example.web.tools.dto.ResultDto;
 import com.example.web.dto.query.AppUserPagedInput;
 import com.example.web.service.AppUserService;
@@ -15,9 +20,13 @@ import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.async.DeferredResult;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 
 /**
@@ -29,6 +38,16 @@ public class AppUserController {
     @Autowired()
     private AppUserService AppUserService;
 
+    private final MinIOService minIOService;
+
+    @Autowired
+    public AppUserController(MinIOService minIOService) {
+        this.minIOService = minIOService;
+    }
+
+    @Autowired
+    private ImportHistoryRepository importHistoryRepository;
+
     /**
      * 用户分页查询接口
      * 包含分页信息和查询结果
@@ -37,15 +56,15 @@ public class AppUserController {
     @RequestMapping(value = "/List", method = RequestMethod.POST)
     @SneakyThrows
     public PagedResult<AppUserDto> List(@RequestBody AppUserPagedInput input) {
-        // 打印请求参数
-        System.out.println("请求参数: " + input);
+//        // 打印请求参数
+//        System.out.println("请求参数: " + input);
 
         // 调用服务
         PagedResult<AppUserDto> result = AppUserService.List(input);
 
-        // 验证是否成功读取数据
-        boolean success = result != null && result.getItems() != null && !result.getItems().isEmpty();
-        System.out.println("读取数据成功: " + success + ", 条数: " + (result.getItems() != null ? result.getItems().size() : 0));
+//        // 验证是否成功读取数据
+//        boolean success = result != null && result.getItems() != null && !result.getItems().isEmpty();
+//        System.out.println("读取数据成功: " + success + ", 条数: " + (result.getItems() != null ? result.getItems().size() : 0));
 
         return result;
     }
@@ -122,14 +141,6 @@ public class AppUserController {
         AppUserService.ForgetPassword(input);
     }
 
-    /**
-     * 用户导出
-     */
-    @RequestMapping(value = "/Export", method = RequestMethod.GET)
-    public void Export(@RequestParam String query, HttpServletResponse response) throws IOException {
-        AppUserService.Export(query, response);
-    }
-
     @RequestMapping(value = "/CalculateAverageHeight", method = {RequestMethod.GET, RequestMethod.POST})
     public ResponseEntity<Double> calculateAverageHeight() {
         double avgHeight = AppUserService.calculateAverageHeight();
@@ -160,5 +171,45 @@ public class AppUserController {
 
         double percentage = AppUserService.calculateEyeColorPercentage(eyeColor);
         return ResultDto.ReturnData(percentage);
+    }
+
+    /**
+     * 用户导出
+     */
+    @RequestMapping(value = "/Export", method = RequestMethod.GET)
+    public void Export(@RequestParam String query, HttpServletResponse response) throws IOException {
+        AppUserService.Export(query, response);
+    }
+
+
+    @PostMapping("/import")
+    public ResponseEntity<?> importExcel(@RequestParam("file") MultipartFile file){
+        String objectName = UUID.randomUUID() + "_" + file.getOriginalFilename();
+
+        try {
+            //先上传 MinIO（第一阶段）
+            minIOService.putObject(file, objectName);
+
+            //再导入数据库（第二阶段）
+            AppUserService.importExcel(file);
+
+            return ResponseEntity.ok(
+                    Map.of("Success", true, "Msg", "文件导入成功并已保存到 MinIO")
+            );
+
+
+        } catch (Exception e) {
+            //补偿：如果 MinIO 已上传但 DB 失败
+            if (minIOService.exists(objectName)) {
+                minIOService.removeObject(objectName);
+            }
+
+            return ResponseEntity.internalServerError()
+                    .body(Map.of("Success", false, "Msg", e.getMessage()));
+        }
+    }
+    @GetMapping("/importHistory")
+    public List<ImportHistory> getImportHistory() {
+        return importHistoryRepository.findAll();
     }
 }

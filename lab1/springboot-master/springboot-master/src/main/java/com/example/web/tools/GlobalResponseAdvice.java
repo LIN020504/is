@@ -8,6 +8,7 @@ import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
+import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 /**
  * 全局响应处理切面
@@ -22,9 +23,17 @@ public class GlobalResponseAdvice  implements ResponseBodyAdvice<Object> {
      * @return
      */
     @Override
-    public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> converterType) {
+    public boolean supports(MethodParameter returnType, Class converterType) {
+
+        // 跳过 SSE
+        if (returnType.getParameterType() == SseEmitter.class) {
+            return false;
+        }
+
+        // 其他接口正常包装
         return true;
     }
+
 
     /**
      *对写入body之前进行拦截拦截处理

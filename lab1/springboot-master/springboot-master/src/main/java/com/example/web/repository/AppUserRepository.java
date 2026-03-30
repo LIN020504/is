@@ -15,4 +15,7 @@ public interface AppUserRepository extends JpaRepository<AppUser, Integer> {
     long countByHairColor(String hairColor);
     long countByEyeColor(String eyeColor);
 
+    boolean existsByUserName(String userName);
+    boolean existsByEmail(String email);
+    boolean existsByPhoneNumber(String phoneNumber);
 }

@@ -5,6 +5,7 @@ import com.example.web.tools.EntityAuditListener;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.apache.commons.beanutils.BeanUtils;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import java.lang.reflect.InvocationTargetException;
 import java.time.LocalDateTime;
@@ -13,6 +14,10 @@ import java.time.LocalDateTime;
 @Entity
 @EntityListeners(EntityAuditListener.class)
 @Table(name = "appuser")
+@Cacheable
+@org.hibernate.annotations.Cache(
+        usage = CacheConcurrencyStrategy.READ_WRITE
+)
 public class AppUser extends BaseEntity {
 
     /** 账号 */

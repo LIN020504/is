@@ -14,4 +14,13 @@ public class SysConst {
     public static final  String UserIdClaim="UserId";
 
     public static final  String RoleTypeClaim="RoleType";
+
+    // HTTP Header
+    public static final String Authorization = "Authorization";
+
+    // Request 中保存 JWT Claims
+    public static final String JwtClaims = "JWT_CLAIMS";
+
+    // 系统管理员角色值（按实际角色调整）
+    public static final int AdminRole = 1;
 }

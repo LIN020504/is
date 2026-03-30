@@ -2,6 +2,7 @@ package com.example.web.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import java.time.LocalDateTime;
 
@@ -11,6 +12,10 @@ import java.time.LocalDateTime;
  */
 @Data
 @MappedSuperclass // ✅ 表示这是一个被继承的父类，不单独映射为表
+@Cacheable
+@org.hibernate.annotations.Cache(
+        usage = CacheConcurrencyStrategy.READ_WRITE
+)
 public abstract class BaseEntity {
 
     /** 主键 */
@@ -18,6 +23,9 @@ public abstract class BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
+
+    @Version
+    private Integer version;
 
     /** 创建时间 */
     @Column(name = "CreationTime", nullable = false)

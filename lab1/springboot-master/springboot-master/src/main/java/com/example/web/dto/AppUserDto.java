@@ -63,7 +63,7 @@ public class AppUserDto extends BaseDto
     @JsonProperty("Birth")
     @JsonSerialize(using= LocalDateTimeSerializer.class)
     @JsonDeserialize(using= LocalDateTimeDeserializer.class)
-    private Object Birth;
+    private LocalDateTime Birth;
 
 
     /**

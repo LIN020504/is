@@ -1,10 +1,15 @@
 package com.example.web.service.impl;
 
+import com.alibaba.excel.EasyExcel;
 import com.example.web.SysConst;
 import com.example.web.dto.AppUserDto;
 import com.example.web.dto.query.AppUserPagedInput;
 import com.example.web.entity.AppUser;
+import com.example.web.entity.ImportHistory;
+import com.example.web.repository.AppUserRepository;
+import com.example.web.repository.ImportHistoryRepository;
 import com.example.web.service.AppUserService;
+import com.example.web.service.NotifyService;
 import com.example.web.tools.Extension;
 import com.example.web.tools.JWTUtils;
 import com.example.web.tools.dto.IdInput;
@@ -12,25 +17,22 @@ import com.example.web.tools.dto.IdsInput;
 import com.example.web.tools.dto.PagedResult;
 import com.example.web.tools.exception.CustomException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
-import jakarta.persistence.Query;
-import jakarta.persistence.TypedQuery;
+import jakarta.persistence.*;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.SneakyThrows;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.IndexedColors;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 
 import java.io.IOException;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeParseException;
 import java.util.*;
 
 @Service
@@ -40,6 +42,14 @@ public class AppUserServiceImpl implements AppUserService {
     @PersistenceContext
     private EntityManager entityManager;
 
+    @Autowired
+    private AppUserRepository appUserRepository;
+
+    @Autowired
+    private NotifyService notifyService;
+
+    @Autowired
+    private ImportHistoryRepository importHistoryRepository;
     //分页查询
     @Override
     public PagedResult<AppUserDto> List(AppUserPagedInput input) {
@@ -102,7 +112,6 @@ public class AppUserServiceImpl implements AppUserService {
         // DTO 转换
         List<AppUserDto> dtoList = Extension.copyBeanList(users, AppUserDto.class);
 
-        //System.out.println("读取数据成功: " + (dtoList != null && !dtoList.isEmpty()) + ", 条数: " + totalCount);
 
         return PagedResult.GetInstance(dtoList, totalCount);
     }
@@ -116,26 +125,67 @@ public class AppUserServiceImpl implements AppUserService {
             throw new CustomException("Username cannot be empty");
         }
 
+        //注册场景：应用层唯一性约束
+        if (input.getId() == null) {
+
+            // 对 userName 加悲观写锁，防止并发重复注册
+            List<AppUser> exists = entityManager.createQuery(
+                            "SELECT u FROM AppUser u WHERE u.userName = :userName",
+                            AppUser.class
+                    )
+                    .setParameter("userName", input.getUserName())
+                    .setLockMode(LockModeType.PESSIMISTIC_WRITE)
+                    .getResultList();
+
+            if (!exists.isEmpty()) {
+                throw new CustomException("Username already exists");
+            }
+        }
+
         AppUser appUser = input.MapToEntity();
 
+        // 密码处理
         if (!Extension.isNullOrEmpty(input.getPassword())) {
             String hashedPassword = BCrypt.hashpw(input.getPassword(), BCrypt.gensalt());
             appUser.setPassword(hashedPassword);
         }
 
-        if (appUser.getId() == null) {
-            entityManager.persist(appUser);
-        } else {
-            entityManager.merge(appUser);
+        try {
+            appUserRepository.saveAndFlush(appUser);
+            notifyService.notifyUpdate("Update");
+        } catch (OptimisticLockException e) {
+            throw new CustomException(
+                    "Update failed: the user was modified by someone else");
         }
+
         return appUser.MapToDto();
     }
 
     //删除
     @Override
     public void Delete(IdInput input) {
+        if (input == null || input.getId() == null) {
+            throw new RuntimeException("ID cannot be null");
+        }
+
         AppUser user = entityManager.find(AppUser.class, input.getId().intValue());
-        if (user != null) entityManager.remove(user);
+
+        if (user == null) {
+            throw new RuntimeException("User already deleted");
+        }
+
+        entityManager.remove(user);
+        entityManager.flush();
+        //notifyService.notifyUpdate("Delete");
+
+//        int affected = entityManager.createQuery(
+//                        "delete from AppUser u where u.id = :id")
+//                .setParameter("id", input.getId())
+//                .executeUpdate();
+//
+//        if (affected == 0) {
+//            throw new CustomException("User already deleted");
+//        }
     }
 
     @Override
@@ -144,6 +194,7 @@ public class AppUserServiceImpl implements AppUserService {
             AppUser user = entityManager.find(AppUser.class, id.intValue());
             if (user != null) entityManager.remove(user);
         }
+        notifyService.notifyUpdate("Update");
     }
 
     //获取单个用户
@@ -275,6 +326,9 @@ public class AppUserServiceImpl implements AppUserService {
         return result;
     }
 
+    /**
+     * 用户导出
+     */
     @Override
     public void Export(@RequestParam String query, HttpServletResponse response) throws IOException {
 
@@ -302,7 +356,7 @@ public class AppUserServiceImpl implements AppUserService {
         HSSFRow headrow = sheet.createRow(0);
 
         //表头数据
-        String[] header = {"账户","密码","姓名","邮箱","手机号码","用户角色","出生年月",};
+        String[] header = {"UserName","Password","Name","Email","PhoneNumber","RoleType","BirthDay",};
         //遍历添加表头(下面模拟遍历用户，也是同样的操作过程)
         for (int i = 0; i < header.length; i++) {
             //创建一个单元格
@@ -343,7 +397,7 @@ public class AppUserServiceImpl implements AppUserService {
                 row.createCell(5).setCellValue(new HSSFRichTextString(appUser.RoleTypeFormat()));
             }
             if(appUser.getBirth()!=null) {
-                row.createCell(6).setCellValue(new HSSFRichTextString(Extension.LocalDateTimeConvertString((LocalDateTime) appUser.getBirth(), null)));
+                row.createCell(6).setCellValue(new HSSFRichTextString(Extension.LocalDateTimeConvertString(appUser.getBirth(), null)));
             }
         }
 
@@ -359,5 +413,52 @@ public class AppUserServiceImpl implements AppUserService {
 
         //workbook将Excel写入到response的输出流中，供页面下载
         workbook.write(response.getOutputStream());
+    }
+
+    /**
+     * Excel 导入（事务控制）
+     */
+    @Override
+    public void importExcel(MultipartFile file) throws IOException {
+        ImportHistory history = new ImportHistory();
+        history.getId();
+        history.setFileName(file.getOriginalFilename());
+        history.setUpload_time(LocalDateTime.now());
+
+        try {
+            // 读取 Excel
+            List<AppUser> users = EasyExcel.read(file.getInputStream())
+                    .head(AppUser.class)
+                    .sheet()
+                    .doReadSync();
+
+            // 校验（示例：不能为空）
+            if (users == null || users.isEmpty()) {
+                throw new RuntimeException("Excel 文件中没有数据");
+            }
+
+//            if (true) {
+//                throw new RuntimeException("Simulated database failure");
+//            }
+
+            // 批量保存用户
+            appUserRepository.saveAll(users);
+
+            if (true) {
+                throw new RuntimeException("Simulated server logic error");
+            }
+
+            // 记录成功历史
+            history.setStatus("SUCCESS");
+            importHistoryRepository.save(history);
+
+        } catch (Exception e) {
+
+            // ❗ 事务会回滚（用户不会插入）
+            history.setStatus("FAILED");
+            importHistoryRepository.save(history);
+
+            throw e; // 必须抛出，保证事务回滚
+        }
     }
 }

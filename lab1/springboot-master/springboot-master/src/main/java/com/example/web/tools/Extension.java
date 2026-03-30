@@ -110,7 +110,7 @@ public class Extension {
         //返回一个分页结构给前端
         return PagedResult.GetInstance(items, (long) totalCount);
     }
-     /**
+    /**
      * 生成一个单号
      * @return
      */
@@ -126,8 +126,8 @@ public class Extension {
         String orderNumber = timeStr + randomNum;
         return orderNumber;
     }
-  
-     /**
+
+    /**
      * 根据日期得到今天是星期几
      */
     public static String GetWeek(LocalDate localDate) {

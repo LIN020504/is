@@ -9,6 +9,7 @@ import com.example.web.tools.dto.PagedResult;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -25,7 +26,6 @@ public interface AppUserService {
     String SignIn(AppUserDto input);
     AppUserDto Register(AppUserDto input);
     void ForgetPassword(AppUserDto input);
-    void Export(@RequestParam String query, HttpServletResponse response) throws IOException;
 
     // PostgreSQL / EclipseLink
     List<AppUser> getUsersByBirth(LocalDateTime birth);
@@ -38,4 +38,7 @@ public interface AppUserService {
     double calculateAverageHeight();
     Map<String, Long> countHairColor();
     Map<String, Long> countEyeColor();
+
+    void Export(@RequestParam String query, HttpServletResponse response) throws IOException;
+    void importExcel(MultipartFile file)throws IOException;
 }

@@ -13,6 +13,9 @@ public class AppUserPagedInput  extends PagedInput {
     @JsonProperty("Id")
     private Integer Id;
 
+    @JsonProperty("UserName")
+    private String UserName;
+
     /**
      * 姓名
      */
@@ -40,7 +43,7 @@ public class AppUserPagedInput  extends PagedInput {
     /**
      * 用户角色
      */
-    @JsonProperty("RoleType")
+    @JsonProperty("RoleTypeFormat")
     private Integer RoleType;
 
     /**
@@ -66,6 +69,4 @@ public class AppUserPagedInput  extends PagedInput {
 
     @JsonProperty("Location")
     private String Location;
-
-
 }

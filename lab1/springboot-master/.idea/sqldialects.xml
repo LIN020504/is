@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/02b8eeee-ec59-43ca-be0a-3082ed154a74/console_3.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/springboot-master/src/main/java/com/example/web/service/impl/AppUserServiceImpl.java" dialect="GenericSQL" />
+    <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>

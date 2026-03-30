@@ -1,5 +1,5 @@
 <template>
-    <el-button size="mini" type="success" icon="el-icon-download" @click="ExportClick()">导 出</el-button>
+    <el-button size="mini" type="success" icon="el-icon-download" @click="ExportClick()">Export</el-button>
 </template>
 <script>
 export default {
@@ -20,10 +20,8 @@ export default {
          * 导出
          */
         async ExportClick() {
-            
-            var query = JSON.stringify(this.$props.where);
-            window.open(process.env.VUE_APP_BASE_API + `${this.$props.exportUrl}?query=` + query, '_blank')
-
+          const query = encodeURIComponent(JSON.stringify(this.where))
+          window.open(`${this.exportUrl}?query=${query}`, '_blank')
         },
     }
 }
